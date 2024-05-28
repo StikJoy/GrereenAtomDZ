@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Пройти опрос</title>
+</head>
+<body>
+	<form action="stat.php" method="post">
+		<div class="pictures">
+			<div class="picturesItem">
+				<div class="imgSlider">
+					<img src="img/Screenshot_1.png" alt="">
+				</div>
+
+				<div class="textSlider">
+					<h2 class="headSlider">1)К какой отрасли относится Гринатом?</h2>
+
+					<div class="radioInput">
+						<div class="radioInput-item">
+							<input id="q1_radio-1" type="radio" name="q1" value="1" checked>
+							<label for="q1_radio-1">Металлургическая отрасль</label>
+						</div>
+						<div class="radioInput-item">
+							<input id="q1_radio-2" type="radio" name="q1" value="2">
+							<label for="q1_radio-2">Легкая промышленность</label>
+						</div>
+						<div class="radioInput-item">
+							<input id="q1_radio-3" type="radio" name="q1" value="3">
+							<label for="q1_radio-3">Атомная отрасль</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="picturesItem">
+				<div class="imgSlider">
+					<img src="img/Screenshot_2.png" alt="">
+				</div>
+
+				<div class="textSlider">
+					<h2 class="headSlider">2)Гринатом является?</h2>
+
+					<div class="radioInput">
+						<div class="radioInput-item">
+							<input id="q2_radio-1" type="radio" name="q2" value="1" checked>
+							<label for="q2_radio-1">ИТ-интегратор госкорпорации Росатом</label>
+						</div>
+						<div class="radioInput-item">
+							<input id="q2_radio-2" type="radio" name="q2" value="2">
+							<label for="q2_radio-2">Cервисная компания</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="picturesItem">
+				<div class="imgSlider">
+					<img src="img/Screenshot_3.png" alt="">
+				</div>
+
+				<div class="textSlider">
+					<h2 class="headSlider">3)Масштаб компании?</h2>
+
+					<div class="radioInput">
+						<div class="radioInput-item">
+							<input id="q3_radio-1" type="radio" name="q3" value="1" checked>
+							<label for="q3_radio-1">34 города и 9000 сотрудников</label>
+						</div>
+						<div class="radioInput-item">
+							<input id="q3_radio-2" type="radio" name="q3" value="2">
+							<label for="q3_radio-2">10 городов и 1600 сотрудников</label>
+						</div>
+						<div class="radioInput-item">
+							<input id="q3_radio-3" type="radio" name="q3" value="3">
+							<label for="q3_radio-3">45 городов и 7000 сотрудников</label>
+						</div>
+					</div>
+
+					<div class="buttonSlider">
+						<input type="submit" class="linkSlider" value="ОТПРАВИТЬ">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+
+<script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
+<script src="js/slider.js" type="text/javascript"></script>
+</html>

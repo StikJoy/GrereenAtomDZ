@@ -1,0 +1,147 @@
+*{
+	margin: 0;
+	padding: 0;
+
+	font-family: "Open Sans", sans-serif;
+
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: #fff;
+}
+
+.picturesItem{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #e8f0fd;
+	margin: 50px calc(100vw - 80vw);
+	padding: 10px;
+	border-radius: 20px;
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+	cursor:default;
+}
+
+.imgSlider img{
+	width: 350px;
+	border-radius: 10%;
+	box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.textSlider{
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.headSlider{font-size: 20px;color: #000;padding-top:20px;width: 50%; margin: auto; text-align: left;}
+.radioInput{width: 50%; margin: auto; text-align: left;}
+.radioInput-item{margin: 5px 0;}
+
+
+.buttonSlider{padding-bottom:10px;}
+
+.linkSlider{
+	padding: 8px 10px;
+	margin: 10px 0;
+	border: 1px solid #9f1e3b;
+	border-radius: 5px;
+	background: #9f1e3b;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff !important;
+	text-decoration: none;
+	cursor: pointer;
+
+	transition: all 0.5s;
+}
+.linkSlider:hover{background: #881a32;}
+
+.pictures{position: relative; padding: 0 20px;}
+.slick-list{overflow: hidden;}
+.slick-track{display: flex; gap:10px;}
+
+.pictures .slick-arrow{
+	position: absolute;
+	margin: -15px calc(100vw - 75vw) 0 calc(100vw - 75vw) ;
+	padding: 5px;
+	top: 45%;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+}
+
+.pictures .slick-arrow.slick-prev{left: 0; background: url("../img/left.svg") 0 0 no-repeat;}
+.pictures .slick-arrow.slick-next{right: 0;background: url("../img/right.svg") 0 0 no-repeat;}
+
+.pictures .slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	gap: 10px; 
+}
+.pictures .slick-dots li{list-style: none; }
+.pictures .slick-dots button{
+	font-size: 0; 
+	padding: 5px;
+	width: 10px;height: 10px; 
+	background-color: #9f1e3b;
+	transition: all 0.2s;
+	border: none;
+	border-radius: 50%
+}
+.pictures .slick-dots li.slick-active button{
+	background-color: #881a32;
+	width: 11px;height: 11px;
+}
+
+
+
+
+
+
+
+
+.radioInput {
+	margin-bottom: 10px;
+}
+.radioInput input[type=radio] {
+	display: none;
+}
+.radioInput label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.radioInput label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../img/nonChecked.svg) 0 0 no-repeat;
+}
+ 
+/* Checked */
+.radioInput input[type=radio]:checked + label:before {
+	background: url(../img/checked.svg) 0 0 no-repeat;
+}
+ 
+/* Hover */
+.radioInput label:hover:before {
+	filter: brightness(120%);
+}
